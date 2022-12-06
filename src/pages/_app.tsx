@@ -17,7 +17,7 @@ const queryClient = new QueryClient({
   },
 })
 
-export function MyApp(props: AppProps) {
+export const MyApp = (props: AppProps) => {
   const { Component, pageProps } = props
   // cookieを使うときにTrue
   axios.defaults.withCredentials = true
